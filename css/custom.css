@@ -671,7 +671,7 @@ opacity:0.5;
 .side-panel-menu {
 	width: 0;
 	height: 100%;
-	background: #2a3f44;
+	background : #07091c ;
 	position: fixed;
 	right: 0;
 	padding: 20px 0;
@@ -912,7 +912,7 @@ opacity:0.5;
 	margin: 0 auto;
 	display: block;
 	padding: 12px 20px;
-	background: #f29a32;
+	background: #07091c;
 	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -1154,7 +1154,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3edc93', end
 	width: 100%;
 	height: 100%;
 	display: block;
-	background: rgba(42, 63, 68, 0.85);
 	content: "";
 	position: absolute;
 	left: 0px;
