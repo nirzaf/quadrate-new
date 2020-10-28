@@ -632,7 +632,7 @@
         var $element = $('#typed');
         if ($element.length > 0) {
             new Typed('#typed', {
-                strings: ['SaaS Template', 'Software Template', 'WebApp Template'],
+                strings: ['Software Solutions', 'Web Designing', 'Digital Marketing'],
                 typeSpeed: 55,
                 backSpeed: 55,
                 smartBackspace: true,
