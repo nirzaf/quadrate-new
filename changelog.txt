@@ -1,0 +1,10 @@
+Version: 1.1.1
+  - Updated Bootstrap to version 5.0.0-beta2
+  - Updated all outdated third party vendor libraries to their latest versions
+
+Version: 1.1.0
+  - Added custom navbar links active on scroll functionality
+  - Small fixes and imrovements in assets/js/main.js
+
+Version: 1.0.0
+  - Initial Release
