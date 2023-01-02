@@ -571,9 +571,10 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <form action="forms/contact.php" method="post" class="php-email-form">
+                        <form action="https://api.staticforms.xyz/submit" method="post" class="php-email-form">
                             <div class="row gy-4">
                                 <div class="col-md-6">
+                                    <input type="hidden" name="accessKey" value="1be905ef-51ff-407f-ba56-490a878f8b32">
                                     <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                                 </div>
                                 <div class="col-md-6 ">
@@ -589,7 +590,7 @@
                                     <div class="loading">Loading</div>
                                     <div class="error-message"></div>
                                     <div class="sent-message">Your message has been sent. Thank you!</div>
-                                    <button type="submit">Send Message</button>
+                                    <input type="submit" value="Submit"/>
                                 </div>
                             </div>
                         </form>
