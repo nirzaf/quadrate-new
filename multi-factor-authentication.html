@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Enable Multi-Factor Authentication for Office/Microsoft 365 Accounts?</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s ease; /* Add transition for smooth change */
+        }
+
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        .lead {
+            font-size: 1.2rem;
+        }
+
+        .navbar {
+            background-color: #f8f9fa;
+            transition: background-color 0.3s ease; /* Add transition for smooth change */
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        .nav-item.active .nav-link {
+            font-weight: bold;
+        }
+
+        .fixed-top {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1030;
+        }
+
+        body.dark-mode {
+            background-color: #212529;
+            color: #fff;
+        }
+
+        .navbar.dark-mode {
+            background-color: #343a40;
+        }
+
+        .dark-mode .nav-link {
+            color: #fff;
+        }
+
+        .dark-mode .nav-link.active {
+            color: #f8f9fa;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">Microsoft 365 Multi-Factor Authentication</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#intro">Introduction</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#step1">Step 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#step2">Step 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#step3">Step 3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#step4">Step 4</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#conclusion">Conclusion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="theme-toggle"><i class="fas fa-adjust"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 id="intro">How to Enable Multi-Factor Authentication using Microsoft Authenticator App for Office 365 Accounts
+        </h1>
+        <p class="lead">MFA/(2FA) is a security feature that adds an extra layer of protection to
+            your Office 365 account. With MFA, you need to provide both your password and a verification code from your
+            mobile device to sign into your account. This makes it harder for hackers to access your account even if
+            they know your password.</p>
+
+        <p>To enable MFA using the Microsoft Authenticator App, you need to download and install the app on your mobile
+            device, set it up as your verification method, and scan a QR code to link it to your account. Here are the
+            steps to do that:</p>
+
+        <h2 id="step1">Step 1: Download and install the Microsoft Authenticator App</h2>
+        <ul>
+            <li>Go to the App Store/Play Store on your mobile device and search for Microsoft Authenticator.</li>
+            <li>Download and install the app on your device.</li>
+            <li>Open the app and accept the terms of use and privacy policy.</li>
+        </ul>
+
+        <h2 id="step2">Step 2: Set up Microsoft Authenticator App as your verification method</h2>
+        <ul>
+            <li>On your computer, open a browser and go to portal.office.com.</li>
+            <li>Sign in to your Office 365 account with your email and password.</li>
+            <li>If you see a screen that says, “More information required”, click Next.</li>
+            <li>If you see a screen that says, “Set up your account”, click Set it up now.</li>
+            <li>If not follow the below link <a href="https://aka.ms/mfasetup"
+                    target="_blank">https://aka.ms/mfasetup</a></li>
+            <li>Add sign-in method option Security info tab</li>
+            <li>Choose the Authenticator app from the dropdown menu.</li>
+            <li>Make sure “Receive notifications for verification” is selected.</li>
+            <li>Click Set up.</li>
+        </ul>
+
+        <h2 id="step3">Step 3: Scan the QR code to link your app to your account</h2>
+        <img src="https://ik.imagekit.io/fazrinphcc/MultiFactorAuthentication/page2.jpg?updatedAt=1717915666195"
+            class="img-fluid" alt="Step 3: Scan the QR code">
+        <img src="https://ik.imagekit.io/fazrinphcc/MultiFactorAuthentication/page3.jpg?updatedAt=1717915666202"
+            class="img-fluid" alt="Step 3: Scan the QR code">
+        <ul>
+            <li>On your mobile device, open the Microsoft Authenticator app and tap the + icon in the upper-right
+                corner.</li>
+            <li>Tap Work or school account.</li>
+            <li>Allow the app to access your camera if prompted.</li>
+            <li>Scan the QR code that appears on your computer screen.</li>
+            <li>On your computer, click Next.</li>
+            <li>The app will send a notification to your mobile device as a test.</li>
+            <li>On your mobile device, tap Approve.</li>
+            <li>On your computer, you will see a message that says “Your configuration was successful”.</li>
+            <li>Click Next.</li>
+        </ul>
+
+        <h2 id="step4">Step 4: Add your phone number as a backup option</h2>
+        <img src="https://ik.imagekit.io/fazrinphcc/MultiFactorAuthentication/page4.jpg?updatedAt=1717915666241"
+            class="img-fluid" alt="Step 4: Add your phone number">
+        <img src="https://ik.imagekit.io/fazrinphcc/MultiFactorAuthentication/page5.jpg?updatedAt=1717915666141"
+            class="img-fluid" alt="Step 4: Add your phone number">
+        <ul>
+            <li>On your computer, enter your mobile phone number in the box.</li>
+            <li>Click Next.</li>
+            <li>You will receive a text message with a verification code on your phone.</li>
+            <li>Enter the code on your computer and click Verify.</li>
+            <li>Click Done.</li>
+        </ul>
+
+        <h2 id="conclusion">Conclusion</h2>
+        <img src="https://ik.imagekit.io/fazrinphcc/MultiFactorAuthentication/page6.jpg?updatedAt=1717915666145"
+            class="img-fluid" alt="Conclusion">
+        <p>You have successfully enabled 2FA using the Microsoft Authenticator App for your Office 365 account. From now
+            on, whenever you sign into your account, you will need to enter your password and approve a notification
+            from the app on your mobile device.</p>
+
+        <p>I hope this tutorial was helpful. If you have any questions, please feel free to contact me.</p>
+        <p>Mobile & WhatsApp: +94772049123/ +97433253203</p>
+        <p>Email: fazrin@quadrate.lk</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+        const navbar = document.querySelector('.navbar');
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            navbar.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+
+</html>
