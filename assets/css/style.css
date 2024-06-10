@@ -1,13 +1,3 @@
-/**
-* Template Name: FlexStart - v1.1.1
-* Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 :root {
   scroll-behavior: smooth;
 }
@@ -31,9 +21,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Nunito", sans-serif;
 }
 
-/*--------------------------------------------------------------
-# Sections
---------------------------------------------------------------*/
 section {
   padding: 60px 0;
   overflow: hidden;
@@ -69,9 +56,6 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
   background: #012970;
@@ -153,18 +137,12 @@ section {
   opacity: 1;
 }
 
-/*--------------------------------------------------------------
-# Disable aos animation delay on mobile devices
---------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
 }
 
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
 .header {
   transition: all 0.5s;
   z-index: 997;
@@ -195,12 +173,6 @@ section {
   margin-top: 3px;
 }
 
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
-/**
-* Desktop Navigation 
-*/
 .navbar {
   padding: 0;
   
@@ -319,9 +291,6 @@ section {
   }
 }
 
-/**
-* Mobile Navigation 
-*/
 .mobile-nav-toggle {
   color: #012970;
   font-size: 28px;
@@ -421,13 +390,10 @@ section {
   display: block;
 }
 
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
 .hero {
   width: 100%;
   height: 100vh;
-  background: url(../img/hero-bg.png) top center no-repeat;
+  background: url(https://ik.imagekit.io/quadrate/assets/img/hero-bg.png?updatedAt=1718024113863) top center no-repeat;
   background-size: cover;
 }
 
