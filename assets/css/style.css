@@ -1,19 +1,28 @@
 :root {
   scroll-behavior: smooth;
+  --color-light-bg: #ffffff;
+  --color-light-text: #444444;
+  --color-light-primary: #4154f1;
+  --color-light-secondary: #717ff5;
+  --color-dark-bg: #121212;
+  --color-dark-text: #e0e0e0;
+  --color-dark-primary: #bb86fc;
+  --color-dark-secondary: #03dac6;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: var(--color-light-text);
+  background-color: var(--color-light-bg);
 }
 
 a {
-  color: #4154f1;
+  color: var(--color-light-primary);
   text-decoration: none;
 }
 
 a:hover {
-  color: #717ff5;
+  color: var(--color-light-secondary);
   text-decoration: none;
 }
 
@@ -36,7 +45,7 @@ section {
   letter-spacing: 1px;
   font-weight: 700;
   margin: 0;
-  color: #4154f1;
+  color: var(--color-light-primary);
   text-transform: uppercase;
 }
 
@@ -114,7 +123,7 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #4154f1;
+  background: var(--color-light-primary);
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -147,10 +156,11 @@ section {
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .header.header-scrolled {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.9);
   padding: 15px 0;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
 }
@@ -211,12 +221,12 @@ section {
 }
 
 .navbar a:hover, .navbar .active, .navbar li:hover > a {
-  color: #4154f1;
+  color: var(--color-light-primary);
   
 }
 
 .navbar .getstarted {
-  background: #4154f1;
+  background: var(--color-light-primary);
   padding: 8px 20px;
   margin-left: 30px;
   border-radius: 4px;
@@ -260,7 +270,7 @@ section {
 }
 
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #4154f1;
+  color: var(--color-light-primary);
 }
 
 .navbar .dropdown:hover > ul {
@@ -351,7 +361,7 @@ section {
 }
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #4154f1;
+  color: var(--color-light-primary);
 }
 
 .navbar-mobile .getstarted {
@@ -383,7 +393,7 @@ section {
 }
 
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #4154f1;
+  color: var(--color-light-primary);
 }
 
 .navbar-mobile .dropdown > .dropdown-active {
@@ -417,7 +427,7 @@ section {
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #4154f1;
+  background: var(--color-light-primary);
   box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
 }
 
@@ -491,7 +501,7 @@ section {
 .about h3 {
   font-size: 14px;
   font-weight: 700;
-  color: #4154f1;
+  color: var(--color-light-primary);
   text-transform: uppercase;
 }
 
@@ -512,7 +522,7 @@ section {
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #4154f1;
+  background: var(--color-light-primary);
   box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
 }
 
@@ -585,7 +595,7 @@ section {
   font-size: 42px;
   line-height: 0;
   margin-right: 20px;
-  color: #4154f1;
+  color: var(--color-light-primary);
 }
 
 .counts .count-box span {
@@ -630,7 +640,7 @@ section {
 }
 
 .features .feature-box:hover i {
-  background: #4154f1;
+  background: var(--color-light-primary);
   color: #fff;
 }
 
@@ -668,8 +678,8 @@ section {
 }
 
 .features .feture-tabs .nav-link.active {
-  color: #4154f1;
-  border-bottom: 3px solid #4154f1;
+  color: var(--color-light-primary);
+  border-bottom: 3px solid var(--color-light-primary);
 }
 
 .features .feture-tabs .tab-content h4 {
@@ -683,7 +693,7 @@ section {
   font-size: 24px;
   line-height: 0;
   margin-right: 8px;
-  color: #4154f1;
+  color: var(--color-light-primary);
 }
 
 .features .feature-icons {
@@ -951,18 +961,18 @@ section {
   display: inline-block;
   padding: 8px 40px 10px 40px;
   border-radius: 50px;
-  color: #4154f1;
+  color: var(--color-light-primary);
   transition: none;
   font-size: 16px;
   font-weight: 400;
   font-family: "Nunito", sans-serif;
   font-weight: 600;
   transition: 0.3s;
-  border: 1px solid #4154f1;
+  border: 1px solid var(--color-light-primary);
 }
 
 .pricing .btn-buy:hover {
-  background: #4154f1;
+  background: var(--color-light-primary);
   color: #fff;
 }
 
@@ -975,7 +985,7 @@ section {
   z-index: 1;
   font-size: 14px;
   padding: 1px 0 3px 0;
-  background: #4154f1;
+  background: var(--color-light-primary);
   color: #fff;
 }
 
@@ -1001,7 +1011,7 @@ section {
 
 .faq .accordion-button:not(.collapsed) {
   background: none;
-  color: #4154f1;
+  color: var(--color-light-primary);
   border-bottom: 0;
 }
 
@@ -1038,8 +1048,8 @@ section {
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #4154f1;
-  border-color: #4154f1;
+  color: var(--color-light-primary);
+  border-color: var(--color-light-primary);
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1137,7 +1147,7 @@ section {
 
 .portfolio .portfolio-wrap .portfolio-links a {
   color: #fff;
-  background: #4154f1;
+  background: var(--color-light-primary);
   margin: 10px 2px;
   width: 36px;
   height: 36px;
@@ -1204,11 +1214,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #4154f1;
+  border: 1px solid var(--color-light-primary);
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #4154f1;
+  background-color: var(--color-light-primary);
 }
 
 .portfolio-details .portfolio-info {
@@ -1308,11 +1318,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #4154f1;
+  border: 1px solid var(--color-light-primary);
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #4154f1;
+  background-color: var(--color-light-primary);
 }
 
 .testimonials .swiper-slide {
@@ -1455,11 +1465,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #4154f1;
+  border: 1px solid var(--color-light-primary);
 }
 
 .clients .clients-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #4154f1;
+  background-color: var(--color-light-primary);
 }
 
 /*--------------------------------------------------------------
@@ -1505,7 +1515,7 @@ section {
 }
 
 .recent-blog-posts .post-box .readmore {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   font-weight: 600;
   line-height: 1;
@@ -1519,7 +1529,7 @@ section {
 }
 
 .recent-blog-posts .post-box:hover .post-title {
-  color: #4154f1;
+  color: var(--color-light-primary);
 }
 
 .recent-blog-posts .post-box:hover .post-img img {
@@ -1538,7 +1548,7 @@ section {
 .contact .info-box i {
   font-size: 38px;
   line-height: 0;
-  color: #4154f1;
+  color: var(--color-light-primary);
 }
 
 .contact .info-box h3 {
@@ -1610,7 +1620,7 @@ section {
 }
 
 .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-  border-color: #4154f1;
+  border-color: var(--color-light-primary);
 }
 
 .contact .php-email-form input {
@@ -1622,7 +1632,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #4154f1;
+  background: var(--color-light-primary);
   border: 0;
   padding: 10px 30px;
   color: #fff;
@@ -1684,7 +1694,7 @@ section {
 }
 
 .blog .entry .entry-title a:hover {
-  color: #4154f1;
+  color: var(--color-light-primary);
 }
 
 .blog .entry .entry-meta {
@@ -1729,7 +1739,7 @@ section {
 
 .blog .entry .entry-content .read-more a {
   display: inline-block;
-  background: #4154f1;
+  background: var(--color-light-primary);
   color: #fff;
   padding: 6px 20px;
   transition: 0.3s;
@@ -1793,7 +1803,7 @@ section {
 }
 
 .blog .entry .entry-footer a:hover {
-  color: #4154f1;
+  color: var(--color-light-primary);
 }
 
 .blog .entry .entry-footer .cats {
@@ -1902,7 +1912,7 @@ section {
 }
 
 .blog .blog-comments .comment h5 a:hover {
-  color: #4154f1;
+  color: var(--color-light-primary);
 }
 
 .blog .blog-comments .comment h5 .reply {
@@ -2002,7 +2012,7 @@ section {
 }
 
 .blog .blog-pagination li.active, .blog .blog-pagination li:hover {
-  background: #4154f1;
+  background: var(--color-light-primary);
 }
 
 .blog .blog-pagination li.active a, .blog .blog-pagination li:hover a {
@@ -2052,7 +2062,7 @@ section {
   font-size: 16px;
   padding: 0 15px;
   margin: -1px;
-  background: #4154f1;
+  background: var(--color-light-primary);
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
@@ -2082,7 +2092,7 @@ section {
 }
 
 .blog .sidebar .categories ul a:hover {
-  color: #4154f1;
+  color: var(--color-light-primary);
 }
 
 .blog .sidebar .categories ul a span {
@@ -2112,7 +2122,7 @@ section {
 }
 
 .blog .sidebar .recent-posts h4 a:hover {
-  color: #4154f1;
+  color: var(--color-light-primary);
 }
 
 .blog .sidebar .recent-posts time {
@@ -2148,8 +2158,8 @@ section {
 
 .blog .sidebar .tags ul a:hover {
   color: #fff;
-  border: 1px solid #4154f1;
-  background: #4154f1;
+  border: 1px solid var(--color-light-primary);
+  background: var(--color-light-primary);
 }
 
 .blog .sidebar .tags ul a span {
@@ -2207,7 +2217,7 @@ section {
   font-size: 16px;
   padding: 0 30px;
   margin: 3px;
-  background: #4154f1;
+  background: var(--color-light-primary);
   color: #fff;
   transition: 0.3s;
   border-radius: 4px;
@@ -2318,7 +2328,7 @@ section {
 }
 
 .footer .footer-top .footer-links ul a:hover {
-  color: #4154f1;
+  color: var(--color-light-primary);
 }
 
 .footer .footer-top .footer-contact p {
@@ -2336,4 +2346,213 @@ section {
   text-align: center;
   font-size: 13px;
   color: #012970;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--color-dark-text);
+    background-color: var(--color-dark-bg);
+  }
+
+  a {
+    color: var(--color-dark-primary);
+  }
+
+  a:hover {
+    color: var(--color-dark-secondary);
+  }
+
+  .section-header h2 {
+    color: var(--color-dark-primary);
+  }
+
+  .back-to-top {
+    background: var(--color-dark-primary);
+  }
+
+  .back-to-top:hover {
+    background: var(--color-dark-secondary);
+  }
+
+  .header {
+    background: rgba(18, 18, 18, 0.8);
+  }
+
+  .header.header-scrolled {
+    background: rgba(18, 18, 18, 0.9);
+  }
+
+  .navbar a {
+    color: var(--color-dark-text);
+  }
+
+  .navbar a:hover, .navbar .active, .navbar li:hover > a {
+    color: var(--color-dark-primary);
+  }
+
+  .navbar .getstarted {
+    background: var(--color-dark-primary);
+  }
+
+  .navbar .getstarted:hover {
+    background: var(--color-dark-secondary);
+  }
+
+  .hero .btn-get-started {
+    background: var(--color-dark-primary);
+  }
+
+  .hero .btn-get-started:hover {
+    background: var(--color-dark-secondary);
+  }
+
+  .about .btn-read-more {
+    background: var(--color-dark-primary);
+  }
+
+  .about .btn-read-more:hover {
+    background: var(--color-dark-secondary);
+  }
+
+  .features .feature-box:hover i {
+    background: var(--color-dark-primary);
+  }
+
+  .features .feture-tabs .nav-link.active {
+    color: var(--color-dark-primary);
+    border-bottom: 3px solid var(--color-dark-primary);
+  }
+
+  .features .feture-tabs .tab-content i {
+    color: var(--color-dark-primary);
+  }
+
+  .services .service-box.blue .icon {
+    color: #2db6fa;
+    background: #1a1a1a;
+  }
+
+  .services .service-box.orange .icon {
+    color: #f68c09;
+    background: #1a1a1a;
+  }
+
+  .services .service-box.green .icon {
+    color: #08da4e;
+    background: #1a1a1a;
+  }
+
+  .services .service-box.red .icon {
+    color: #e9222c;
+    background: #1a1a1a;
+  }
+
+  .services .service-box.purple .icon {
+    color: #b50edf;
+    background: #1a1a1a;
+  }
+
+  .services .service-box.pink .icon {
+    color: #f51f9c;
+    background: #1a1a1a;
+  }
+
+  .pricing .btn-buy {
+    color: var(--color-dark-primary);
+    border: 1px solid var(--color-dark-primary);
+  }
+
+  .pricing .btn-buy:hover {
+    background: var(--color-dark-primary);
+  }
+
+  .pricing .featured {
+    background: var(--color-dark-primary);
+  }
+
+  .faq .accordion-button:not(.collapsed) {
+    color: var(--color-dark-primary);
+  }
+
+  .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+    color: var(--color-dark-primary);
+    border-color: var(--color-dark-primary);
+  }
+
+  .portfolio .portfolio-wrap .portfolio-links a {
+    background: var(--color-dark-primary);
+  }
+
+  .portfolio .portfolio-wrap .portfolio-links a:hover {
+    background: var(--color-dark-secondary);
+  }
+
+  .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+    border: 1px solid var(--color-dark-primary);
+  }
+
+  .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+    background: var(--color-dark-primary);
+  }
+
+  .testimonials .swiper-pagination .swiper-pagination-bullet {
+    border: 1px solid var(--color-dark-primary);
+  }
+
+  .testimonials .swiper-pagination .swiper-pagination-bullet-active {
+    background: var(--color-dark-primary);
+  }
+
+  .blog .entry .entry-title a:hover {
+    color: var(--color-dark-primary);
+  }
+
+  .blog .entry .entry-content .read-more a {
+    background: var(--color-dark-primary);
+  }
+
+  .blog .entry .entry-content .read-more a:hover {
+    background: var(--color-dark-secondary);
+  }
+
+  .blog .entry .entry-footer a:hover {
+    color: var(--color-dark-primary);
+  }
+
+  .blog .blog-pagination li.active, .blog .blog-pagination li:hover {
+    background: var(--color-dark-primary);
+  }
+
+  .blog .blog-pagination li.active a, .blog .blog-pagination li:hover a {
+    color: #fff;
+  }
+
+  .blog .sidebar .search-form form button {
+    background: var(--color-dark-primary);
+  }
+
+  .blog .sidebar .search-form form button:hover {
+    background: var(--color-dark-secondary);
+  }
+
+  .blog .sidebar .categories ul a:hover {
+    color: var(--color-dark-primary);
+  }
+
+  .blog .sidebar .recent-posts h4 a:hover {
+    color: var(--color-dark-primary);
+  }
+
+  .blog .sidebar .tags ul a:hover {
+    border: 1px solid var(--color-dark-primary);
+    background: var(--color-dark-primary);
+  }
+
+  .footer .footer-newsletter form input[type="submit"] {
+    background: var(--color-dark-primary);
+  }
+
+  .footer .footer-newsletter form input[type="submit"]:hover {
+    background: var(--color-dark-secondary);
+  }
 }

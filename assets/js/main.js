@@ -286,4 +286,50 @@
     aos_init();
   });
 
+  /**
+   * Toggle dark mode
+   */
+  const toggleDarkMode = () => {
+    document.body.classList.toggle('dark-mode');
+  }
+
+  /**
+   * Change header background on scroll
+   */
+  const changeHeaderBackground = () => {
+    let header = select('#header');
+    if (window.scrollY > 100) {
+      header.classList.add('header-scrolled');
+    } else {
+      header.classList.remove('header-scrolled');
+    }
+  }
+  window.addEventListener('scroll', changeHeaderBackground);
+
+  /**
+   * Subtle animations and micro-interactions
+   */
+  const subtleAnimations = () => {
+    let elements = select('.animate-on-scroll', true);
+    elements.forEach(element => {
+      if (element.getBoundingClientRect().top < window.innerHeight) {
+        element.classList.add('animated');
+      }
+    });
+  }
+  window.addEventListener('scroll', subtleAnimations);
+
+  /**
+   * Parallax scrolling effect
+   */
+  const parallaxScrolling = () => {
+    let parallaxElements = select('.parallax', true);
+    parallaxElements.forEach(element => {
+      let speed = element.getAttribute('data-speed');
+      let yPos = -(window.scrollY * speed / 100);
+      element.style.transform = `translateY(${yPos}px)`;
+    });
+  }
+  window.addEventListener('scroll', parallaxScrolling);
+
 })();
