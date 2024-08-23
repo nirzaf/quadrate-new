@@ -1,9 +1,19 @@
-/**
-* Template Name: FlexStart - v1.1.1
-* Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
+const fadeElements = document.querySelectorAll('.fade-in');
+
+const fadeIn = () => {
+  fadeElements.forEach(element => {
+    const elementTop = element.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+    if (elementTop < windowHeight - 100) {
+      element.classList.add('visible');
+    }
+  });
+};
+
+window.addEventListener('scroll', fadeIn);
+window.addEventListener('load', fadeIn);
+
 (function() {
   "use strict";
 

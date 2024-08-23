@@ -1,6 +1,37 @@
 :root {
-  scroll-behavior: smooth;
+  --primary-color: #4e73df;
+  --secondary-color: #1cc88a;
+  --accent-color: #f6c23e;
+  --text-color: #5a5c69;
+  --background-color: #f8f9fc;
 }
+
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 body {
   font-family: "Open Sans", sans-serif;

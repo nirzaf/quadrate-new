@@ -12,6 +12,37 @@
         .material-icons {
             vertical-align: -14%
         }
+
+        body {
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#about .content {
+    padding-right: 50px;
+}
+
+#about .col-lg-6.d-flex.align-items-center {
+    padding-left: 50px;
+}
+
+
     </style>
     <meta content="" name="description">
     <meta content="" name="keywords">
@@ -80,11 +111,11 @@
 
     <main id="main">
         <!-- ======= About Section ======= -->
-        <section id="about" class="about">
+        <section id="about" class="about parallax" style="background-image: url('https://ik.imagekit.io/quadrate/wp8358553-software-developer-wallpapers.jpg?updatedAt=1724450586486');">
             <div class="container" data-aos="fade-up">
                 <div class="row gx-0">
                     <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-                        <div class="content">
+                        <div class="content" style="background: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 10px;">
                             <h3>Who We Are</h3>
                             <h2>We build your business through engaging websites</h2>
                             <p style="text-align: justify;">
@@ -92,11 +123,9 @@
                                 Our quality comes from the bloodline of Coders, Engineers and Co-founders who understands every
                                 single step of creating the next big software for you.
                             </p>
-
-                            <div class="text-center text-lg-start">
-                            </div>
                         </div>
-                        <div>
+                        <br>
+                        <div  class="content" style="background: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 10px;">
                             <h2 style="text-align: center;">Mission</h2>
                             <p style="text-align: center;">
                                 We strive to offer our customer affordable and higher quality services through
